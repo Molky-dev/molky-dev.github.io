@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/66bf2187ba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portofolio</title>
+</head>
+
+<body>
+    <header class="flex-container">
+        <div class="name flex-item">
+            <h1 id="name">Quentin PRIEUR</h1>
+            <h1 id="job">Software Developer</h1>
+        </div>
+    </header>
+    <hr class="style-seven">
+    <main>
+        <div class="rowmain">
+            <div class="colmain">
+                <span class="fa-solid fa-graduation-cap" style="color:#AFFFFF; font-size: 50px;"></span>
+                <p>Je m'appelle Quentin,<br> je suis étudiant en <strong style="color:#AFFFFF;">BTS
+                        SIO</strong><br>(Services informatiques aux Organisations).<br>Pour l'avenir,<br> je prévois de
+                    devenir <strong style="color:#AFFFFF;">développeur Logiciel.</strong></p>
+            </div>
+
+            <div class="colmain">
+                <span class="fa-solid fa-computer" style="color:#AFFFFF; font-size: 50px;"></span>
+
+                <p>Je possède les bases du HTML,<br> <strong style="color:#AFFFFF;">CSS</strong> et <strong
+                        style="color:#AFFFFF;">C#</strong> <br>Je suis plus avancé en <strong
+                        style="color:#AFFFFF;">Java</strong>,<br><strong style="color:#AFFFFF;">JavaScript</strong> et
+                    <strong style="color:#AFFFFF;">Python</strong>
+                </p>
+            </div>
+
+            <div class="colmain">
+                <span class="fa-solid fa-bell" style="color:#AFFFFF; font-size: 50px;"></span>
+                <p>Mes loisirs sont :<br><strong style="color:#AFFFFF;">•</strong> Le vélo<br><strong style="color:#AFFFFF;">•</strong> L'informatique<br><strong style="color:#AFFFFF;">•</strong> La musique
+                </p>
+
+            </div>
+        </div>
+        <hr class="style-seven2">
+        <div class="container-fluid" id="skills">
+            <div class="skills-text">
+                <h1 class="skills-title">Compétences</h1>
+                <dl class="skills-list">
+                    <dt class="skill-name">Java</dt>
+                    <dd class="skill-percent skill-percent-java" data-percent="90%"></dd>
+                    <dt class="skill-name">HTML</dt>
+                    <dd class="skill-percent skill-percent-html" data-percent="85%"></dd>
+                    <dt class="skill-name">CSS</dt>
+                    <dd class="skill-percent skill-percent-css" data-percent="75%"></dd>
+                    <dt class="skill-name">Javascript</dt>
+                    <dd class="skill-percent skill-percent-javascript" data-percent="70%"></dd>
+                    <dt class="skill-name">Python</dt>
+                    <dd class="skill-percent skill-percent-python" data-percent="52%"></dd>
+
+                </dl>
+            </div>
+        </div>
+        <hr class="style-seven">
+        <div id="skills">
+            <h1 class="skills-title">Projets personnel</h1>
+        </div>
+
+        <div class="rowmain">
+
+
+            <div class="colmain">
+                <img src="https://staryx.fr/storage/img/logo.png" style="height: 120px;" />
+                <p>Infrastrucure communautaire du jeu <strong
+                        style="color:#AFFFFF;">Minecraft</strong><br>(principalement en Java et en YAML)</p>
+            </div>
+
+        </div>
+        <hr class="style-seven2">
+        <div id="skills">
+            <h1 class="skills-title">Contacts et Informations supplémentaire</h1>
+            <div class="rowmain">
+                <div class="colmain">
+                    <span class="fa-solid fa-envelope" style="color:#AFFFFF; font-size: 50px;"></span>
+                    <p>Mail:<br>quentin.028@hotmail.fr</p>
+                </div>
+    
+                <div class="colmain">
+                    <span class="fa-solid fa-laptop-code" style="color:#AFFFFF; font-size: 50px;"></span>
+    
+                    <p>CV:<br><a href="https://www.doyoubuzz.com/quentin-prieur#" target="_blank">PRIEUR Quentin</a>
+                    </p>
+                </div>
+    
+                <div class="colmain">
+                    <span class="fa-brands fa-discord" style="color:#AFFFFF; font-size: 50px;"></span>
+                    <p>Discord:<br>Molky#9700</p>
+    
+                </div>
+            </div>
+        </div>
+        <hr class="style-seven">
+        <footer>
+            <p>Réalisé entièrement par PRIEUR Quentin © - 2022</p>
+        </footer>
+    <script>
+        $('.skill-percent').each(function () {
+            $(this).animate({
+                width: $(this).attr('data-percent')
+            }, "fast");
+        });
+    </script>
+    </main>
+</body>
+
+</html>

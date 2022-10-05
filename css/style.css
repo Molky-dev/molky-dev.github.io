@@ -1,0 +1,268 @@
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 0px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #FFF;
+}
+
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+body {
+  background-color: #272727;
+
+}
+
+.flex-container {
+  display: block;
+  width: 100%;
+}
+
+.flex-container>.flex-item {
+  flex: auto;
+}
+
+.name {
+  margin-left: 5vh;
+  font-size: 12px;
+  text-align: left;
+}
+
+body p {
+  width: 300px;
+}
+
+.skills-title {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+dd {
+  margin-inline-start: 0px;
+}
+
+.rowmain {
+  margin: auto;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+
+}
+
+
+.rowmain .colmain p {
+  color: #FFF;
+  font-size: 24px;
+
+}
+
+.name {
+  text-align: center;
+
+}
+
+.name #name {
+  color: #0000FF;
+}
+
+.name #job {
+  color: #00FFFF;
+
+}
+
+hr.style-seven {
+  overflow: visible;
+  height: 30px;
+  border-style: solid;
+  border-color: #fff;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+  transform: rotate(1deg);
+
+  
+}
+
+hr.style-seven:before {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: #fff;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+
+
+hr.style-seven2 {
+  overflow: visible;
+  height: 30px;
+  border-style: solid;
+  border-color: #fff;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+  transform: rotate(-1deg);
+}
+
+hr.style-seven2:before {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: #fff;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+
+}
+
+a.active {
+  color: #AFFFFF;
+  border: 2px solid #AFFFFF;
+  border-radius: 93% 7% 88% 12% / 24% 69% 31% 76%;
+  padding: 3px;
+}
+
+header a:hover {
+  color: #000000;
+  border: 2px solid #000;
+  border-radius: 93% 7% 88% 12% / 24% 69% 31% 76%;
+  padding: 3px;
+}
+
+body a:hover {
+  color: #000000;
+  text-decoration: underline;
+  font-style:oblique;
+}
+
+body a {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 24px;
+}
+header a {
+  border: 2px solid #fff;
+  border-radius: 93% 7% 88% 12% / 24% 69% 31% 76%;
+  padding: 3px;
+}
+
+footer {
+  height: auto;
+  width: 100%;
+  background-color: #000;
+  text-align: center;
+}
+
+footer p {
+  color: #FFF;
+  font-size: 20px;
+  width: 100%;
+  margin-block-end: 0;
+}
+
+ul.nav {
+  margin: auto;
+  display: flex;
+  padding: 2.5vh;
+  text-align: right;
+}
+
+
+/*Code pour les barres de Skills*/
+
+
+
+#skills {
+  padding: 20px 15px 20px 15px;
+  color: #fff;
+  text-align: center;
+}
+
+.skills-text {
+  max-width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+}
+
+.skills-title {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.skills-title.underline:before {
+  width: 40px;
+}
+
+.skills-list {
+  overflow: hidden;
+  position: relative;
+  z-index: 10
+}
+
+.skill-name:after {
+  background-color: #999797;
+  content: '';
+  display: block;
+  height: 1rem;
+  position: relative;
+  top: 3px;
+  width: 100%;
+}
+
+.skill-percent {
+  font-size: 0;
+  height: 1rem;
+  position: relative;
+  top: -.8rem;
+  transition: 3s linear;
+  width: 0;
+}
+
+
+.skill-percent-html {
+  background-color: #FF5C00;
+}
+
+.skill-percent-css {
+  background-color: #00B1DB;
+}
+
+.skill-percent-javascript {
+  background-color: #FF8B00;
+
+}
+
+.skill-percent-java {
+  background-color: #FFA100;
+
+}
+
+.skill-percent-python {
+  background-color: #00A3FF;
+
+}
+
+
+.underline {
+  display: inline-block;
+  position: relative;
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .rowmain {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
