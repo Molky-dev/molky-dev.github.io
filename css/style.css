@@ -23,6 +23,11 @@ body {
 
 }
 
+#change {
+  color: #FFF;
+  float: right;
+}
+
 .flex-container {
   display: block;
   width: 100%;
@@ -265,4 +270,64 @@ ul.nav {
     align-items: center;
     text-align: center;
   }
+}
+
+
+/*Light theme*/
+
+.light {
+  background-color: #FFF;
+}
+
+main .h1dark {
+  color: #000;
+}
+
+.spanstrongdark {
+  color: #0000FF !important;
+}
+.pdark {
+  color: #000 !important;
+}
+
+.hrdark {
+  overflow: visible;
+  height: 30px;
+  border-style: solid;
+  border-color: #000;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+  transform: rotate(1deg);
+}
+
+.hrdark:before {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: #000;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+
+.hrdark2 {
+  overflow: visible;
+  height: 30px;
+  border-style: solid;
+  border-color: #000;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+  transform: rotate(-1deg);
+}
+
+.hrdark2:before {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: #000;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
 }

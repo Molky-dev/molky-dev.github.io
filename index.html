@@ -7,16 +7,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/66bf2187ba.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+    <script src="./javascript/script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio</title>
 </head>
 
 <body>
+    
     <header class="flex-container">
+    <span id="change">Light</span>
         <div class="name flex-item">
             <h1 id="name">Quentin PRIEUR</h1>
             <h1 id="job">Software Developer</h1>
         </div>
+        
     </header>
     <hr class="style-seven">
     <main>
@@ -40,7 +44,9 @@
 
             <div class="colmain">
                 <span class="fa-solid fa-bell" style="color:#AFFFFF; font-size: 50px;"></span>
-                <p>Mes loisirs sont :<br><strong style="color:#AFFFFF;">•</strong> Le vélo<br><strong style="color:#AFFFFF;">•</strong> L'informatique<br><strong style="color:#AFFFFF;">•</strong> La musique
+                <p>Mes loisirs sont :<br><strong style="color:#AFFFFF;">•</strong> Le vélo<br><strong
+                        style="color:#AFFFFF;">•</strong> L'informatique<br><strong style="color:#AFFFFF;">•</strong> La
+                    musique
                 </p>
 
             </div>
@@ -87,33 +93,58 @@
                     <span class="fa-solid fa-envelope" style="color:#AFFFFF; font-size: 50px;"></span>
                     <p>Mail:<br>quentin.028@hotmail.fr</p>
                 </div>
-    
+
                 <div class="colmain">
                     <span class="fa-solid fa-laptop-code" style="color:#AFFFFF; font-size: 50px;"></span>
-    
+
                     <p>CV:<br><a href="https://www.doyoubuzz.com/quentin-prieur#" target="_blank">PRIEUR Quentin</a>
                     </p>
                 </div>
-    
+
                 <div class="colmain">
                     <span class="fa-brands fa-discord" style="color:#AFFFFF; font-size: 50px;"></span>
                     <p>Discord:<br>Molky#9700</p>
-    
+
                 </div>
             </div>
         </div>
         <hr class="style-seven">
-        <footer>
-            <p>Réalisé entièrement par PRIEUR Quentin © - 2022</p>
-        </footer>
-    <script>
-        $('.skill-percent').each(function () {
-            $(this).animate({
-                width: $(this).attr('data-percent')
-            }, "fast");
-        });
-    </script>
+        <script>
+            $('.skill-percent').each(function () {
+                $(this).animate({
+                    width: $(this).attr('data-percent')
+                }, "fast");
+            });
+        </script>
+
+        <script>
+            $("#change").click(function() {
+                if($("body").hasClass("light")) {
+                    $('#change').text("Light")
+                    $("body").removeClass("light")
+                    $("main h1").removeClass("h1dark")
+                    $("main p").removeClass("pdark")
+                    $("span,strong").css("color", "#AFFFFF");
+                    $("hr.hrdark").removeClass("hrdark").addClass("style-seven");
+                    $("hr.hrdark2").removeClass("hrdark2").addClass("style-seven2");
+                    $("dT").removeClass("pdark")
+                } else {
+                    $('#change').text("Dark")
+                    $("body").addClass("light")
+                    $("main h1").addClass("h1dark")
+                    $("main p").addClass("pdark")
+                    $("span,strong").css("color", "#0000FF");
+                    $("hr.style-seven").addClass("hrdark").removeClass("style-seven");
+                    $("hr.style-seven2").addClass("hrdark2").removeClass("style-seven2");
+                    $("dT").addClass("pdark")
+                }
+
+            })
+        </script>
     </main>
+    <footer>
+        <p>Réalisé entièrement par PRIEUR Quentin © - 2022</p>
+    </footer>
 </body>
 
 </html>
