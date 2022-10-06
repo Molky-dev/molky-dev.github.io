@@ -6,10 +6,12 @@
   width: 6px;
   height: 0px;
 }
+
 ::-webkit-scrollbar-button {
   width: 0px;
   height: 0px;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #FFF;
 }
@@ -35,16 +37,15 @@ footer p {
 }
 
 .flex-container {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
 }
 
-.flex-container>.flex-item {
-  flex: auto;
-}
 
 .name {
-  margin-left: 5vh;
+  flex: auto;
   font-size: 12px;
   text-align: left;
 }
@@ -87,6 +88,7 @@ dd {
 }
 
 .name #job {
+  flex: auto;
   color: #00FFFF;
 
 }
@@ -100,7 +102,7 @@ hr.style-seven {
   border-radius: 20px;
   transform: rotate(0);
 
-  
+
 }
 
 hr.style-seven:before {
@@ -154,7 +156,7 @@ header a:hover {
 body a:hover {
   color: #fff;
   text-decoration: underline;
-  font-style:oblique;
+  font-style: oblique;
 }
 
 body a {
@@ -162,6 +164,7 @@ body a {
   color: #FFF;
   font-size: 24px;
 }
+
 header a {
   border: 2px solid #fff;
   border-radius: 93% 7% 88% 12% / 24% 69% 31% 76%;
@@ -277,7 +280,8 @@ ul.nav {
   display: inline-block;
   position: relative;
 }
-@media only screen and (max-device-width : 480px) {
+
+@media (orientation: portrait) or (max-device-width : 480px) {
   .rowmain {
     flex-direction: column;
     align-items: center;
@@ -309,12 +313,13 @@ body .alight {
 body .alight:hover {
   color: #000;
   text-decoration: underline;
-  font-style:oblique;
+  font-style: oblique;
 }
 
 .spanstrongdark {
   color: #0000FF !important;
 }
+
 .pdark {
   color: #000 !important;
 }
