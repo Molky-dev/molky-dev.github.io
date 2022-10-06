@@ -15,7 +15,6 @@
 <body>
     
     <header class="flex-container">
-    <span id="change">Light</span>
         <div class="name flex-item">
             <h1 id="name">Quentin PRIEUR</h1>
             <h1 id="job">Software Developer</h1>
@@ -53,8 +52,8 @@
         </div>
         <hr class="style-seven2">
         <div class="container-fluid" id="skills">
+            <h1 class="skills-title">Compétences</h1>
             <div class="skills-text">
-                <h1 class="skills-title">Compétences</h1>
                 <dl class="skills-list">
                     <dt class="skill-name">Java</dt>
                     <dd class="skill-percent skill-percent-java" data-percent="90%"></dd>
@@ -87,7 +86,7 @@
         </div>
         <hr class="style-seven2">
         <div id="skills">
-            <h1 class="skills-title">Contacts et Informations supplémentaire</h1>
+            <h1 class="skills-title">Contacts et Informations supplémentaires</h1>
             <div class="rowmain">
                 <div class="colmain">
                     <span class="fa-solid fa-envelope" style="color:#AFFFFF; font-size: 50px;"></span>
@@ -117,34 +116,38 @@
             });
         </script>
 
-        <script>
-            $("#change").click(function() {
-                if($("body").hasClass("light")) {
-                    $('#change').text("Light")
-                    $("body").removeClass("light")
-                    $("main h1").removeClass("h1dark")
-                    $("main p").removeClass("pdark")
-                    $("span,strong").css("color", "#AFFFFF");
-                    $("hr.hrdark").removeClass("hrdark").addClass("style-seven");
-                    $("hr.hrdark2").removeClass("hrdark2").addClass("style-seven2");
-                    $("dT").removeClass("pdark")
-                } else {
-                    $('#change').text("Dark")
-                    $("body").addClass("light")
-                    $("main h1").addClass("h1dark")
-                    $("main p").addClass("pdark")
-                    $("span,strong").css("color", "#0000FF");
-                    $("hr.style-seven").addClass("hrdark").removeClass("style-seven");
-                    $("hr.style-seven2").addClass("hrdark2").removeClass("style-seven2");
-                    $("dT").addClass("pdark")
-                }
-
-            })
-        </script>
     </main>
     <footer>
+        <span id="change">Light</span>
         <p>Réalisé entièrement par PRIEUR Quentin © - 2022</p>
+        
     </footer>
+    <script>
+        $("#change").click(function() {
+            if($("body").hasClass("light")) {
+                $('#change').text("Light")
+                $("body").removeClass("light")
+                $("main h1").removeClass("h1dark")
+                $("main p").removeClass("pdark")
+                $("span,strong").css("color", "#AFFFFF");
+                $("hr.hrdark").removeClass("hrdark").addClass("style-seven");
+                $("hr.hrdark2").removeClass("hrdark2").addClass("style-seven2");
+                $("dT").removeClass("pdark")
+                $("body a").removeClass("alight")
+            } else {
+                $('#change').text("Dark")
+                $("body").addClass("light")
+                $("main h1").addClass("h1dark")
+                $("main p").addClass("pdark")
+                $("span,strong").css("color", "#0000FF");
+                $("hr.style-seven").addClass("hrdark").removeClass("style-seven");
+                $("hr.style-seven2").addClass("hrdark2").removeClass("style-seven2");
+                $("dT").addClass("pdark")
+                $("body a").addClass("alight")
+            }
+
+        })
+    </script>
 </body>
 
 </html>
