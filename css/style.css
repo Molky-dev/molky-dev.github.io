@@ -249,31 +249,10 @@ ul.nav {
   top: -.8rem;
   transition: 3s linear;
   width: 0;
+  background-color: #AFFFFF;
 }
 
 
-.skill-percent-html {
-  background-color: #FF5C00;
-}
-
-.skill-percent-css {
-  background-color: #00B1DB;
-}
-
-.skill-percent-javascript {
-  background-color: #FF8B00;
-
-}
-
-.skill-percent-java {
-  background-color: #FFA100;
-
-}
-
-.skill-percent-python {
-  background-color: #00A3FF;
-
-}
 
 
 .underline {
@@ -317,6 +296,15 @@ body .alight:hover {
 }
 
 .spanstrongdark {
+  color: #0000FF !important;
+}
+
+.backgroundblue {
+  background-color: #0000FF;
+}
+
+
+.jobdark { 
   color: #0000FF !important;
 }
 

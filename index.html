@@ -56,15 +56,15 @@
             <div class="skills-text">
                 <dl class="skills-list">
                     <dt class="skill-name">Java</dt>
-                    <dd class="skill-percent skill-percent-java" data-percent="90%"></dd>
+                    <dd class="skill-percent" data-percent="90%"></dd>
                     <dt class="skill-name">HTML</dt>
-                    <dd class="skill-percent skill-percent-html" data-percent="85%"></dd>
+                    <dd class="skill-percent" data-percent="85%"></dd>
                     <dt class="skill-name">CSS</dt>
-                    <dd class="skill-percent skill-percent-css" data-percent="75%"></dd>
+                    <dd class="skill-percent" data-percent="75%"></dd>
                     <dt class="skill-name">Javascript</dt>
-                    <dd class="skill-percent skill-percent-javascript" data-percent="70%"></dd>
+                    <dd class="skill-percent" data-percent="70%"></dd>
                     <dt class="skill-name">Python</dt>
-                    <dd class="skill-percent skill-percent-python" data-percent="52%"></dd>
+                    <dd class="skill-percent" data-percent="52%"></dd>
 
                 </dl>
             </div>
@@ -134,6 +134,8 @@
                 $("hr.hrdark2").removeClass("hrdark2").addClass("style-seven2");
                 $("dT").removeClass("pdark")
                 $("body a").removeClass("alight")
+                $("#job").removeClass("jobdark")
+                $(".skill-percent").removeClass("backgroundblue")
             } else {
                 $('#change').text("Dark")
                 $("body").addClass("light")
@@ -144,6 +146,8 @@
                 $("hr.style-seven2").addClass("hrdark2").removeClass("style-seven2");
                 $("dT").addClass("pdark")
                 $("body a").addClass("alight")
+                $("#job").addClass("jobdark")
+                $(".skill-percent").addClass("backgroundblue")
             }
 
         })
