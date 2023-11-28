@@ -183,47 +183,6 @@ print(saisie);
         <p class="footer">© 2023 Fluxoscript. Tous droits réservés.</p>
     </div>
 
-    <script>
-        // On définit un objet qui contient les mots clés et leurs couleurs associées
-        var mots_cles = {
-            "func": "blue",
-            "if": "red",
-            "else": "red",
-            "return": "green",
-            "print": "purple",
-            "class": "blue",
-            "self": "orange",
-            "for": "red",
-            "__init__": "green",
-            "flux": "blue",
-            "ouvrir": "green",
-            "lire": "green",
-            "réaction": "blue",
-            "tache": "blue",
-            "input": "purple"
-        };
-
-        var elements = document.getElementsByClassName("code");
-
-        for (var i = 0; i < elements.length; i++) {
-            var texte = elements[i].textContent;
-            texte = texte.replace(/\n/g, "<br>");
-            texte = texte.replace(/\t/g, "    ");
-            var mots = texte.split(/\s+/);
-            var nouveau_texte = "";
-            for (var j = 0; j < mots.length; j++) {
-                var mot = mots[j];
-                if (mots_cles.hasOwnProperty(mot)) {
-                    var couleur = mots_cles[mot];
-                    nouveau_texte += "<span style='color:" + couleur + "'>" + mot + "</span>";
-                } else {
-                    nouveau_texte += mot;
-                }
-                nouveau_texte += " ";
-            }
-            elements[i].innerHTML = nouveau_texte;
-        }
-    </script>
 </body>
 
 </html>
