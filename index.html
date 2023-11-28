@@ -202,6 +202,39 @@ while (i <= 10 | i++) { # on répète la boucle tant que i est inférieur ou ég
             <div class="section-content">
                 <p>Exemple 9: Les tableaux en Fluxoscript</p>
                 <pre class="code">
+tableau = int<>[10]; # on crée un tableau de taille 10
+tableau2 = int<2>[10] # on crée un tableau de taille 10 à deux dimensions
+tableau3 = int<3>[10] # on crée un tableau de taille 10 à trois dimensions
+
+tableau[0] = 1; # on affecte la valeur 1 à la première case du tableau
+
+tableau2[0][0] = 2; # on affecte la valeur 1 à la première case du tableau à deux dimensions
+
+tableau3[0][0][0] = 3; # on affecte la valeur 1 à la première case du tableau à trois dimensions
+
+'''
+Tableau 1 :
+[1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Tableau 2 :
+[[2, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
+
+Tableau 3 :
+[[[3, 0, 0, 0, 0, 0, 0, 0, 0, 0]]]
+
+'''
+
+valeur = tableau[0]; # on récupère la valeur de la première case du tableau
+
+valeur2 = tableau2[0][0]; # on récupère la valeur de la première case du tableau à deux dimensions
+
+valeur3 = tableau3[0][0][0]; # on récupère la valeur de la première case du tableau à trois dimensions
+
+print(valeur); # on affiche la valeur à l'écran (1)
+
+print(valeur2); # on affiche la valeur à l'écran (2)
+
+print(valeur3); # on affiche la valeur à l'écran (3)
 
 
                 </pre>
