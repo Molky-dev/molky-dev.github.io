@@ -80,12 +80,14 @@
                 <li>Les réactions sont des fonctions qui sont exécutées automatiquement lorsque les données d'un flux
                     changent. Elles sont définies avec le mot-clé réaction, suivi du nom de la réaction, du nom du flux
                     entre parenthèses, et du bloc de code entre accolades.</li>
-                <li>Les tâches sont des fonctions qui sont exécutées en parallèle avec le programme principal. Elles
-                    sont définies avec le mot-clé tâche, suivi du nom de la tâche, des paramètres entre parenthèses, et
+                <li>Les taches sont des fonctions qui sont exécutées en parallèle avec le programme principal. Elles
+                    sont définies avec le mot-clé tache, suivi du nom de la tache, des paramètres entre parenthèses, et
                     du bloc de code entre accolades.</li>
                 <li>Les structures de contrôle sont des mots-clés qui permettent de contrôler le fluxdu programme selon
                     des conditions ou des répétitions. Elles sont if (si), else (sinon), elif (sinon si), for (pour),
                     while (tant que), break (interrompre), continue (continuer), return (retourner), yield (produire).
+                </li>
+                <li>Les tâches sont des procédures et ne renvoie pas de valeur.
                 </li>
             </ul>
         </div>
@@ -149,9 +151,9 @@ réaction afficher(fichier) { # réaction définit une réaction, afficher est l
                 </pre>
             </div>
             <div class="section-content">
-                <p>Exemple 5: Définir une tâche qui calcule la somme des carrés des nombres de 1 à 100.</p>
+                <p>Exemple 5: Définir une tache qui calcule la somme des carrés des nombres de 1 à 100.</p>
                 <pre class="code">
-tâche somme_carres() { # tâche définit une tâche, somme_carres est le nom de la tâche
+tache somme_carres() { # tache définit une tache, somme_carres est le nom de la tache
     # le bloc de code contient les instructions à exécuter en parallèle avec le programme principal
     somme = 0; # on initialise la variable somme à 0
     for (i = 1; i <= 100; i++) { # for est une structure de contrôle de répétition, i est la variable de boucle
@@ -181,7 +183,7 @@ tâche somme_carres() { # tâche définit une tâche, somme_carres est le nom de
             "ouvrir": "green",
             "lire": "green",
             "réaction": "blue",
-            "tâche": "blue"
+            "tache": "blue"
         };
 
         var elements = document.getElementsByClassName("code");
