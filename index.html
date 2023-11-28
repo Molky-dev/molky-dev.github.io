@@ -243,7 +243,18 @@ print(valeur3); # on affiche la valeur à l'écran (3)
         </div>
         <p class="footer">© 2023 Fluxoscript. Tous droits réservés.</p>
     </div>
+    <style>
+        #a:hover #b {
+            content: "test2";
+        }
 
+        #b:hover #c {
+            content: "test3";
+        }
+    </style>
+    <h1 id="a">test</h1>
+    <h1 id="b">test2</h1>
+    <h1 id="c">test3</h1>
 
 </body>
 
