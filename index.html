@@ -163,6 +163,22 @@ tache somme_carres() { # tache définit une tache, somme_carres est le nom de la
 }
                 </pre>
             </div>
+            <div class="section-content">
+                <p>Exemple 6: Récupérer une saisie utilisateur</p>
+                <pre class="code">
+saisie = input(); # input est une fonction intégrée qui récupère une saisie utilisateur
+
+# on affiche la saisie à l'écran
+
+print(saisie);
+
+saisie = input("Entrez un nombre: "); # on peut aussi afficher un message avant de récupérer la saisie
+
+# on affiche la saisie à l'écran
+
+print(saisie);
+                </pre>
+            </div>
         </div>
         <p class="footer">© 2023 Fluxoscript. Tous droits réservés.</p>
     </div>
@@ -183,7 +199,8 @@ tache somme_carres() { # tache définit une tache, somme_carres est le nom de la
             "ouvrir": "green",
             "lire": "green",
             "réaction": "blue",
-            "tache": "blue"
+            "tache": "blue",
+            "input": "purple"
         };
 
         var elements = document.getElementsByClassName("code");
