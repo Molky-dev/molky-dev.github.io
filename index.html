@@ -3,246 +3,162 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description"
-        content="Fluxoscript est un nouveau langage de programmation innovant et performant. Cette page contient la documentation du langage. C'est un langage propulsée par IA qui va permettre...">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/66bf2187ba.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
-    <title>Fluxoscript - Documentation</title>
-
+    <script src="./javascript/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
 </head>
 
 <body>
-    <div class="container">
-        <img src="logo.png" alt="Logo Fluxoscript" class="logo">
-        <h1 class="title">Fluxoscript</h1>
-        <h2 class="subtitle">Documentation</h2>
-        <div class="section">
-            <h3 class="section-title">Introduction</h3>
-            <p class="section-content">Fluxoscript est un nouveau langage de programmation innovant et performant. Il
-                est conçu pour être facile à apprendre, à écrire et à exécuter. Il combine les avantages de plusieurs
-                paradigmes de programmation, tels que la programmation fonctionnelle, la programmation orientée objet,
-                la programmation réactive et la programmation concurrente. Il est adapté pour le développement web, le
-                traitement de données, l'intelligence artificielle et bien plus encore.</p>
+    
+    <header class="flex-container">
+        <div class="name flex-item">
+            <h1 id="name">Quentin PRIEUR</h1>
+            <h1 id="job">Software Developer</h1>
         </div>
-        <div class="section">
-            <h3 class="section-title">Syntaxe</h3>
-            <p class="section-content">La syntaxe de Fluxoscript est simple et élégante. Elle suit les principes
-                suivants:</p>
-            <ul class="section-content">
-                <li>Les mots-clés sont en minuscules et commencent par un caractère alphabétique.</li>
-                <li>Les noms de variables, de fonctions et de classes commencent par un caractère alphabétique ou un
-                    souligné (_), et peuvent contenir des caractères alphanumériques ou des soulignés.</li>
-                <li>Les constantes sont en majuscules et commencent par un caractère alphabétique.</li>
-                <li>Les commentaires commencent par un dièse (#) et se terminent par un saut de ligne.</li>
-                <li>Les blocs de code sont délimités par des accolades ({ et }).</li>
-                <li>Les instructions se terminent par un point-virgule (;).</li>
-                <li>Les expressions sont évaluées de gauche à droite, sauf si des parenthèses sont utilisées pour
-                    modifier l'ordre de priorité.</li>
-                <li>Les opérateurs arithmétiques sont +, -, *, /, % (modulo), ** (puissance).</li>
-                <li>Les opérateurs de comparaison sont == (égal), != (différent), < (inférieur),> (supérieur), <=
-                            (inférieur ou égal),>= (supérieur ou égal).</li>
-                <li>Les opérateurs logiques sont && (et), || (ou), ! (non).</li>
-                <li>Les opérateurs d'affectation sont =, +=, -=, *=, /=, %=, **=.</li>
-                <li>Les types de données primitifs sont bool (booléen), int (entier), float (réel), str (chaîne de
-                    caractères), list (liste), dict (dictionnaire), func (fonction), class (classe).</li>
-                <li>Les valeurs littérales sont true (vrai), false (faux), null (nul), "texte" (chaîne de caractères),
-                    [éléments] (liste), {clés: valeurs} (dictionnaire).</li>
-                <li>Les fonctions sont définies avec le mot-clé func, suivi du nom de la fonction, des paramètres entre
-                    parenthèses, et du bloc de code entre accolades.</li>
-                <li>Les classes sont définies avec le mot-clé class, suivi du nom de la classe, de la classe parente
-                    entre parenthèses (optionnel), et du bloc de code entre accolades.</li>
-                <li>Les méthodes sont des fonctions définies à l'intérieur d'une classe. Elles prennent le paramètre
-                    self comme premier argument, qui représente l'instance de la classe.</li>
-                <li>Les attributs sont des variables définies à l'intérieur d'une classe ou d'une instance de classe.
-                </li>
-                <li>Les constructeurs sont des méthodes spéciales qui sont appelées lors de la création d'une instance
-                    de classe. Ils ont le nom __init__ et prennent le paramètre self comme premier argument, suivi des
-                    arguments nécessaires à l'initialisation de l'instance.</li>
-                <li>Les destructeurs sont des méthodes spéciales qui sont appelées lors de la destruction d'une instance
-                    de classe. Ils ont le nom __del__ et prennent le paramètre self comme seul argument.</li>
-                <li>L'héritage est le mécanisme par lequel une classe peut hériter des attributs et des méthodes d'une
-                    autre classe. La classe qui hérite est appelée la classe enfant, et la classe dont elle hérite est
-                    appelée la classe parente.</li>
-                <li>Le polymorphisme est le mécanisme par lequel une classe enfant peut redéfinir ou étendre les
-                    attributs ou les méthodes d'une classe parente.</li>
-                <li>L'encapsulation est le mécanisme par lequel une classe peut cacher ou protéger ses attributs ou ses
-                    méthodes. Les attributs ou les méthodes privés sont précédés d'un double souligné (__), et ne sont
-                    accessibles qu'à l'intérieur de la classe. Les attributs ou les méthodes protégés sont précédés d'un
-                    simple souligné (_), et sont accessibles à l'intérieur de la classe et de ses classes enfants.</li>
-                <li>L'abstraction est le mécanisme par lequel une classe peut définir des attributs ou des méthodes
-                    abstraits, qui doivent être implémentés par les classes enfants. Les attributs ou les méthodes
-                    abstraits sont précédés d'un arrobase (@).</li>
-                <li>Les flux sont des objets qui représentent des sources ou des destinations de données, tels que des
-                    fichiers, des sockets, des bases de données, etc. Ils sont créés avec le mot-clé flux, suivi du nom
-                    du flux, du type de flux entre parenthèses, et du bloc de code entre accolades.</li>
-                <li>Les réactions sont des fonctions qui sont exécutées automatiquement lorsque les données d'un flux
-                    changent. Elles sont définies avec le mot-clé réaction, suivi du nom de la réaction, du nom du flux
-                    entre parenthèses, et du bloc de code entre accolades.</li>
-                <li>Les taches sont des fonctions qui sont exécutées en parallèle avec le programme principal. Elles
-                    sont définies avec le mot-clé tache, suivi du nom de la tache, des paramètres entre parenthèses, et
-                    du bloc de code entre accolades.</li>
-                <li>Les structures de contrôle sont des mots-clés qui permettent de contrôler le fluxdu programme selon
-                    des conditions ou des répétitions. Elles sont if (si), else (sinon), elif (sinon si), for (pour),
-                    while (tant que), break (interrompre), continue (continuer), return (retourner), yield (produire).
-                </li>
-                <li>Les tâches sont des procédures et ne renvoie pas de valeur.
-                </li>
-            </ul>
+        
+    </header>
+    <hr class="style-seven">
+    <main>
+        <div class="rowmain">
+            <div class="colmain">
+                <span class="fa-solid fa-graduation-cap" style="color:#AFFFFF; font-size: 50px;"></span>
+                <p>Je m'appelle Quentin,<br> je suis étudiant en <strong style="color:#AFFFFF;">BTS
+                        SIO</strong><br>(Services informatiques aux Organisations).<br>Pour l'avenir,<br> je prévois de
+                    devenir <strong style="color:#AFFFFF;">développeur Logiciel.</strong></p>
+            </div>
+
+            <div class="colmain">
+                <span class="fa-solid fa-computer" style="color:#AFFFFF; font-size: 50px;"></span>
+
+                <p>Je possède les bases du HTML,<br> <strong style="color:#AFFFFF;">CSS</strong> et <strong
+                        style="color:#AFFFFF;">C#</strong> <br>Je suis plus avancé en <strong
+                        style="color:#AFFFFF;">Java</strong>,<br><strong style="color:#AFFFFF;">JavaScript</strong> et
+                    <strong style="color:#AFFFFF;">Python</strong>
+                </p>
+            </div>
+
+            <div class="colmain">
+                <span class="fa-solid fa-bell" style="color:#AFFFFF; font-size: 50px;"></span>
+                <p>Mes loisirs sont :<br><strong style="color:#AFFFFF;">•</strong> Le vélo<br><strong
+                        style="color:#AFFFFF;">•</strong> L'informatique<br><strong style="color:#AFFFFF;">•</strong> La
+                    musique
+                </p>
+
+            </div>
         </div>
-        <div class="section">
-            <h3 class="section-title">Exemples</h3>
-            <p class="section-content">Voici quelques exemples de code Fluxoscript pour illustrer la syntaxe et les
-                fonctionnalités du langage.</p>
-            <div class="section-content">
-                <p>Exemple 1: Afficher "Bonjour le monde" à l'écran.</p>
-                <pre class="code">
-# Ceci est un commentaire
-print("Bonjour le monde"); # print est une fonction intégrée qui affiche une valeur à l'écran
-                </pre>
+        <hr class="style-seven2">
+        <div class="container-fluid" id="skills">
+            <h1 class="skills-title">Compétences</h1>
+            <div class="skills-text">
+                <dl class="skills-list">
+                    <dt class="skill-name">Java</dt>
+                    <dd class="skill-percent" data-percent="90%"></dd>
+                    <dt class="skill-name">HTML</dt>
+                    <dd class="skill-percent" data-percent="85%"></dd>
+                    <dt class="skill-name">CSS</dt>
+                    <dd class="skill-percent" data-percent="75%"></dd>
+                    <dt class="skill-name">Javascript</dt>
+                    <dd class="skill-percent" data-percent="70%"></dd>
+                    <dt class="skill-name">Python</dt>
+                    <dd class="skill-percent" data-percent="52%"></dd>
+                    <dt class="skill-name">React-JS</dt>
+                    <dd class="skill-percent" data-percent="70%"></dd>
+                    <dt class="skill-name">Symfony</dt>
+                    <dd class="skill-percent" data-percent="75%"></dd>
+                    <dt class="skill-name">Docker</dt>
+                    <dd class="skill-percent" data-percent="52%"></dd>
+                    
+
+                </dl>
             </div>
-            <div class="section-content">
-                <p>Exemple 2: Définir une fonction qui calcule la factorielle d'un nombre.</p>
-                <pre class="code">
-func factorielle(n) { # func définit une fonction, n est le paramètre
-    if (n == 0) { # if est une structure de contrôle conditionnelle
-        return 1; # return renvoie une valeur et termine la fonction
-    } else {
-        return n * factorielle(n - 1); # on utilise la récursivité pour appeler la fonction elle-même
-    }
-}
-
-print(factorielle(5)); # on appelle la fonction avec l'argument 5 et on affiche le résultat
-                </pre>
-            </div>
-            <div class="section-content">
-                <p>Exemple 3: Définir une classe qui représente un point dans un espace à deux dimensions.</p>
-                <pre class="code">
-class Point { # class définit une classe, Point est le nom de la classe
-    __init__(self, x, y) { # __init__ est le constructeur de la classe, self est l'instance de la classe, x et y sont les arguments
-        self.x = x; # self.x est un attribut de l'instance, on lui affecte la valeur de x
-        self.y = y; # self.y est un attribut de l'instance, on lui affecte la valeur de y
-    }
-
-    func distance(self, autre) { # func définit une méthode de la classe, self est l'instance de la classe, autre est un autre point
-        return ((self.x - autre.x) ** 2 + (self.y - autre.y) ** 2) ** 0.5; # on calcule la distance entre les deux points
-    }
-}
-
-p1 = Point(1, 2); # on crée une instance de la classe Point avec les arguments 1 et 2
-p2 = Point(3, 4); # on crée une autre instance de la classe Point avec les arguments 3 et 4
-print(p1.distance(p2)); # on appelle la méthode distance de l'instance p1 avec l'argument p2 et on affiche le résultat
-                </pre>
-            </div>
-            <div class="section-content">
-                <p>Exemple 4: Définir un flux qui lit les données d'un fichier texte.</p>
-                <pre class="code">
-flux fichier("fichier.txt") { # flux définit un flux, fichier est le nom du flux, "fichier.txt" est le type de flux
-    # le bloc de code contient les instructions à exécuter lors de la création du flux
-    ouvrir(); # ouvrir est une méthode intégrée qui ouvre le fichier
-}
-
-réaction afficher(fichier) { # réaction définit une réaction, afficher est le nom de la réaction, fichier est le nom du flux
-    # le bloc de code contient les instructions à exécuter lorsque les données du flux changent
-    ligne = lire(); # lire est une méthode intégrée qui lit une ligne du fichier
-    print(ligne); # on affiche la ligne à l'écran
-}
-                </pre>
-            </div>
-            <div class="section-content">
-                <p>Exemple 5: Définir une tache qui calcule la somme des carrés des nombres de 1 à 100.</p>
-                <pre class="code">
-tache somme_carres() { # tache définit une tache, somme_carres est le nom de la tache
-    # le bloc de code contient les instructions à exécuter en parallèle avec le programme principal
-    somme = 0; # on initialise la variable somme à 0
-    for (i = 1; i <= 100; i++) { # for est une structure de contrôle de répétition, i est la variable de boucle
-        somme += i ** 2; # on ajoute le carré de i à la somme
-    }
-    print(somme); # on affiche la somme à l'écran
-}
-                </pre>
-            </div>
-            <div class="section-content">
-                <p>Exemple 6: Récupérer une saisie utilisateur</p>
-                <pre class="code">
-saisie = input(); # input est une fonction intégrée qui récupère une saisie utilisateur
-
-# on affiche la saisie à l'écran
-
-print(saisie);
-
-saisie = input("Entrez un nombre: "); # on peut aussi afficher un message avant de récupérer la saisie
-
-# on affiche la saisie à l'écran
-
-print(saisie);
-                </pre>
-            </div>
-            <div class="section-content">
-                <p>Exemple 7: Boucles for en Fluxoscript</p>
-                <pre class="code">
-for (i = 0 | i <= 10 | i++) { # on initialise i à 0, on répète la boucle tant que i est inférieur ou égal à 10, on incrémente i à chaque itération
-    print(i); # on affiche i à l'écran 
-}
-
-                </pre>
-            </div>
-
-            <div class="section-content">
-                <p>Exemple 8: Boucles while en Fluxoscript</p>
-                <pre class="code">
-i = 0; # on initialise i à 0
-while (i <= 10 | i++) { # on répète la boucle tant que i est inférieur ou égal à 10, on incrémente i à chaque itération
-    print(i); # on affiche i à l'écran
-}
-
-                </pre>
-            </div>
-            <div class="section-content">
-                <p>Exemple 9: Les tableaux en Fluxoscript</p>
-                <pre class="code">
-tableau = int<>[10]; # on crée un tableau de taille 10
-tableau2 = int<2>[10] # on crée un tableau de taille 10 à deux dimensions
-tableau3 = int<3>[10] # on crée un tableau de taille 10 à trois dimensions
-
-tableau[0] = 1; # on affecte la valeur 1 à la première case du tableau
-
-tableau2[0][0] = 2; # on affecte la valeur 2 à la première case du tableau à deux dimensions
-
-tableau3[0][0][0] = 3; # on affecte la valeur 3 à la première case du tableau à trois dimensions
-
-'''
-Tableau 1 :
-[1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-
-Tableau 2 :
-[[2, 0, 0, 0, 0, 0, 0, 0, 0, 0]...]
-
-Tableau 3 :
-[[[3, 0, 0, 0, 0, 0, 0, 0, 0, 0]...]...]
-
-'''
-
-valeur = tableau[0]; # on récupère la valeur de la première case du tableau
-
-valeur2 = tableau2[0][0]; # on récupère la valeur de la première case du tableau à deux dimensions
-
-valeur3 = tableau3[0][0][0]; # on récupère la valeur de la première case du tableau à trois dimensions
-
-print(valeur); # on affiche la valeur à l'écran (1)
-
-print(valeur2); # on affiche la valeur à l'écran (2)
-
-print(valeur3); # on affiche la valeur à l'écran (3)
-
-
-                </pre>
-            </div>
-            
         </div>
-        <p class="footer">© 2023 Fluxoscript. Tous droits réservés.</p>
-    </div>
+        <hr class="style-seven">
+        <div id="skills">
+            <h1 class="skills-title">Projets personnel</h1>
+        </div>
+
+        <div class="rowmain">
 
 
+            <div class="colmain">
+                <img src="https://staryx.fr/storage/img/logo.png" style="height: 120px;" />
+                <p>Infrastrucure communautaire du jeu <strong
+                        style="color:#AFFFFF;">Minecraft</strong><br>(principalement en Java et en YAML)</p>
+            </div>
+
+        </div>
+        <hr class="style-seven2">
+        <div id="skills">
+            <h1 class="skills-title">Contacts et Informations supplémentaires</h1>
+            <div class="rowmain">
+                <div class="colmain">
+                    <span class="fa-solid fa-envelope" style="color:#AFFFFF; font-size: 50px;"></span>
+                    <p>Mail:<br>quentin.028@hotmail.fr</p>
+                </div>
+
+                <div class="colmain">
+                    <span class="fa-solid fa-laptop-code" style="color:#AFFFFF; font-size: 50px;"></span>
+
+                    <p>CV:<br><a href="https://www.doyoubuzz.com/quentin-prieur#" target="_blank">PRIEUR Quentin</a>
+                    </p>
+                </div>
+
+                <div class="colmain">
+                    <span class="fa-brands fa-discord" style="color:#AFFFFF; font-size: 50px;"></span>
+                    <p>Discord:<br>molky</p>
+
+                </div>
+            </div>
+        </div>
+        <hr class="style-seven">
+        <script>
+            $('.skill-percent').each(function () {
+                $(this).animate({
+                    width: $(this).attr('data-percent')
+                }, "fast");
+            });
+        </script>
+
+    </main>
+    <footer>
+        <span id="change">Light</span>
+        <p>Réalisé entièrement par PRIEUR Quentin © - 2022</p>
+        
+    </footer>
+    <script>
+        $("#change").click(function() {
+            if($("body").hasClass("light")) {
+                $('#change').text("Light")
+                $("body").removeClass("light")
+                $("main h1").removeClass("h1dark")
+                $("main p").removeClass("pdark")
+                $("span,strong").css("color", "#AFFFFF");
+                $("hr.hrdark").removeClass("hrdark").addClass("style-seven");
+                $("hr.hrdark2").removeClass("hrdark2").addClass("style-seven2");
+                $("dT").removeClass("pdark")
+                $("body a").removeClass("alight")
+                $("#job").removeClass("jobdark")
+                $(".skill-percent").removeClass("backgroundblue")
+            } else {
+                $('#change').text("Dark")
+                $("body").addClass("light")
+                $("main h1").addClass("h1dark")
+                $("main p").addClass("pdark")
+                $("span,strong").css("color", "#0000FF");
+                $("hr.style-seven").addClass("hrdark").removeClass("style-seven");
+                $("hr.style-seven2").addClass("hrdark2").removeClass("style-seven2");
+                $("dT").addClass("pdark")
+                $("body a").addClass("alight")
+                $("#job").addClass("jobdark")
+                $(".skill-percent").addClass("backgroundblue")
+            }
+
+        })
+    </script>
 </body>
 
 </html>
