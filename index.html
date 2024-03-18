@@ -7,19 +7,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/66bf2187ba.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
-    <script src="./javascript/script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>PRIEUR Quentin</title>
 </head>
 
 <body>
-    
+
     <header class="flex-container">
         <div class="name flex-item">
             <h1 id="name">Quentin PRIEUR</h1>
             <h1 id="job">Software Developer</h1>
         </div>
-        
+
     </header>
     <hr class="style-seven">
     <main>
@@ -27,16 +26,16 @@
             <div class="colmain">
                 <span class="fa-solid fa-graduation-cap" style="color:#AFFFFF; font-size: 50px;"></span>
                 <p>Je m'appelle Quentin,<br> je suis étudiant en <strong style="color:#AFFFFF;">BTS
-                        SIO</strong><br>(Services informatiques aux Organisations).<br>Pour l'avenir,<br> je prévois de
-                    devenir <strong style="color:#AFFFFF;">développeur Logiciel.</strong></p>
+                        SIO</strong><br>(Services informatiques aux Organisations).</p>
             </div>
 
             <div class="colmain">
                 <span class="fa-solid fa-computer" style="color:#AFFFFF; font-size: 50px;"></span>
 
-                <p>Je possède les bases du HTML,<br> <strong style="color:#AFFFFF;">CSS</strong> et <strong
-                        style="color:#AFFFFF;">C#</strong> <br>Je suis plus avancé en <strong
-                        style="color:#AFFFFF;">Java</strong>,<br><strong style="color:#AFFFFF;">JavaScript</strong> et
+                <p>Je maitrise <strong style="color:#AFFFFF;">HTML</strong>,<br> <strong
+                        style="color:#AFFFFF;">CSS</strong>, <strong style="color:#AFFFFF;">C#</strong> <br>Je suis plus
+                    avancé en <strong style="color:#AFFFFF;">Java</strong>,<br><strong
+                        style="color:#AFFFFF;">JavaScript</strong> et
                     <strong style="color:#AFFFFF;">Python</strong>
                 </p>
             </div>
@@ -71,7 +70,7 @@
                     <dd class="skill-percent" data-percent="75%"></dd>
                     <dt class="skill-name">Docker</dt>
                     <dd class="skill-percent" data-percent="52%"></dd>
-                    
+
 
                 </dl>
             </div>
@@ -83,7 +82,15 @@
 
         <div class="rowmain">
 
-
+            <div class="colmain">
+                <img src="img/astro.png" style="height: 120px;" />
+                <p>Astro est un robot
+                    <strong style="color:#AFFFFF;">Discord </strong>
+                    <br>
+                    permettant d'écouter de la
+                    <strong style="color:#AFFFFF;">musique</strong> dans les salons vocaux.<br> (NodeJS, JSON)
+                </p>
+            </div>
             <div class="colmain">
                 <img src="https://staryx.fr/storage/img/logo.png" style="height: 120px;" />
                 <p>Infrastrucure communautaire du jeu <strong
@@ -125,13 +132,13 @@
 
     </main>
     <footer>
-        <span id="change">Light</span>
+        <span id="change" style="text-decoration: underline;">Light</span>
         <p>Réalisé entièrement par PRIEUR Quentin © - 2022</p>
-        
+
     </footer>
     <script>
-        $("#change").click(function() {
-            if($("body").hasClass("light")) {
+        $("#change").click(function () {
+            if ($("body").hasClass("light")) {
                 $('#change').text("Light")
                 $("body").removeClass("light")
                 $("main h1").removeClass("h1dark")
@@ -142,6 +149,7 @@
                 $("dT").removeClass("pdark")
                 $("body a").removeClass("alight")
                 $("#job").removeClass("jobdark")
+                $("#name").removeClass("namedark")
                 $(".skill-percent").removeClass("backgroundblue")
             } else {
                 $('#change').text("Dark")
@@ -154,6 +162,7 @@
                 $("dT").addClass("pdark")
                 $("body a").addClass("alight")
                 $("#job").addClass("jobdark")
+                $("#name").addClass("namedark")
                 $(".skill-percent").addClass("backgroundblue")
             }
 
